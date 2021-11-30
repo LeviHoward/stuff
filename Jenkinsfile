@@ -5,6 +5,7 @@ pipeline {
     }
     parameters {
         string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
+        string(name: 'Somthing', defaultValue: 'lasjdflsj')
     }
     stages {
         stage('Build') {
