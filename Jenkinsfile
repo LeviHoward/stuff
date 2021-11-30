@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello you crule world!' > filename.txt
+                sh 'make'
             }
         }
         stage('Test') {
