@@ -37,6 +37,7 @@ pipeline {
         stage('Paramaters') {
             steps {
                 echo("${params.Greeting} World!")
+                echo("${params}")
             }
         }
     }
