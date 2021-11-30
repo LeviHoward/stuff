@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir
+                ls
             }
         }
         stage('Test') {
