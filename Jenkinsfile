@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                ls
+                echo 'tatter head'
             }
         }
         stage('Test') {
