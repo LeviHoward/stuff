@@ -3,8 +3,8 @@ pipeline {
     environment {
         LEVI_JENKINS_ENV = 'HOTDOG'
     }
-    parameters{
-        string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world')
+    parameters {
+        string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
     }
     stages {
         stage('Build') {
@@ -34,9 +34,9 @@ pipeline {
                 echo "Levi set an env var named LEVI_JENKINS_ENV with ${env.LEVI_JENKINS_ENV} in it"
             }
         }
-        stage('Parmaters') {
+        stage('Paramaters') {
             steps {
-                echo("${parms.Greeting} World!")
+                echo("${params.Greeting} World!")
             }
         }
     }
