@@ -23,7 +23,8 @@ pipeline {
         }
         stage('Example') {
             steps {
-                echo "Running ${env.BUILD_ID} ON ${env.JENKINS_URL}"
+                echo "Running branch ${env.BRANCH_NAME} ON ${env.JENKINS_URL}"
+                echo "BUILD_NUMBER ${env.BUILD_NUMBER} BUILD_ID ${env.BUILD_ID}"
             }
         }
     }
