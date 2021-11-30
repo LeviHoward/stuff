@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                if exist filename.txt notepad filename.txt
+                echo 'This is the test stage'
             }
         }
     }
