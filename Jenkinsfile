@@ -34,6 +34,7 @@ pipeline {
                 echo "BUILD_NUMBER ${env.BUILD_NUMBER} BUILD_ID ${env.BUILD_ID}"
                 echo "Levi set an env var named LEVI_JENKINS_ENV with ${env.LEVI_JENKINS_ENV} in it"
                 echo "JENKINS_HOME ${env.JENKINS_HOME}"
+                echo "JENKINS_HOME ${env.WORKSPACE}"
                 echo "ITEM_ROOTDIR ${env.ITEM_ROOTDIR}"
             }
         }
